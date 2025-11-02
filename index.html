@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARS</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="top">
+  <section class="hero" aria-label="Mars landing page"> <!--aria label para que lo lea el lector de pantalla-->
+    <div class="top-bar" aria-hidden="true">
+      <div class="rule"></div>
+    </div>
+     <!--barra superior decorativa, aria hidden para que no la lea el lector de pantalla-->
+
+   <div class="haze" aria-hidden="true"></div>
+    <div class="title-wrap">
+      <h1 class="title">MARS</h1>
+    </div>
+
+  </section>
+
+   <section class="why-proyect-section shared-block-bg bg-mars">
+    <div class="container">
+  <h2 class="aboutproyect">About the project</h2>
+  <div class="why-proyect">
+  <p>My name is <strong>Lola Mazza</strong>, a second-year <strong>Multimedial Technology</strong> student. This project grows out of my interest in communicating science through design, using visual language and interaction to make complex content accessible and engaging.
+
+I chose <strong>Mars</strong> because it sits at the intersection of scientific relevance (being the most plausible target for near-future human missions) and a striking aesthetic that supports a clear, immersive visual narrative. My goal this year was to learn <strong>p5.js</strong>, so the site presents information in cards that open <strong>interactive sketches</strong> inspired by Martian phenomena (climate, terrain, orbits). This way, users can read, explore, and manipulate generative visualizations, while I bring together code, UX, and visual direction in a cohesive product.</p>
+  </div>
+    </div>
+
+  </section>
+
+  <!--FACTS SECTION-->
+<section id="facts" class="facts">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="section-title">About Mars</h2>
+      <p class="section-kicker">Key facts you didn't know.</p>
+    </header>
+
+    <div class="facts-grid" role="list">
+      <article class="fact-card" role="listitem">
+        <h3>Distance from the Sun</h3>
+        <p class="value">1.524 AU <span>(≈ 227.9 million km)</span></p>
+        <p class="note">Average orbital distance.</p>
+      </article>
+
+      <article class="fact-card" role="listitem">
+        <h3>Diameter</h3>
+        <p class="value">6,779 km</p>
+        <p class="note">Mean diameter at the equator.</p>
+      </article>
+
+      <article class="fact-card" role="listitem">
+        <h3>Surface Gravity</h3>
+        <p class="value">3.71 m/s² <span>(≈ 0.38 g)</span></p>
+        <p class="note">About 38% of Earth’s gravity.</p>
+      </article>
+
+      <article class="fact-card" role="listitem">
+        <h3>Length of a Day</h3>
+        <p class="value">1 sol ≈ 24 h 39 m</p>
+        <p class="note">Solar day (noon-to-noon).</p>
+      </article>
+
+      <article class="fact-card" role="listitem">
+        <h3>Length of a Year</h3>
+        <p class="value">687 Earth days</p>
+        <p class="note">≈ 668.6 sols.</p>
+      </article>
+
+      <article class="fact-card" role="listitem">
+        <h3>Atmosphere</h3>
+        <p class="value">~95% CO₂, 2.7% N₂, 1.6% Ar</p>
+        <p class="note">Traces of O₂ and H₂O; very thin (~6 mbar).</p>
+      </article>
+
+      <article class="fact-card" role="listitem">
+        <h3>Average Surface Temp.</h3>
+        <p class="value">−63 °C <span>(−81 °F)</span></p>
+        <p class="note">Varies widely by season & latitude.</p>
+      </article>
+
+      <article class="fact-card" role="listitem">
+        <h3>Moons</h3>
+        <p class="value">Phobos &amp; Deimos</p>
+        <p class="note">Captured asteroid–like bodies.</p>
+      </article>
+
+      <article class="fact-card" role="listitem">
+        <h3>Tallest Volcano</h3>
+        <p class="value">Olympus Mons — 21.9 km</p>
+        <p class="note">Shield volcano, ~2.5× Everest.</p>
+      </article>
+
+      <article class="fact-card" role="listitem">
+        <h3>Grand Canyon</h3>
+        <p class="value">Valles Marineris — ~4,000 km</p>
+        <p class="note">Up to ~7 km deep, 200 km wide.</p>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+  <!--WHY MARS SECTION-->
+<section id="why-mars" class="why shared-block-bg">
+  <div class="container">
+    <header class="why-head">
+      <h2 class="why-title"><span>WHY</span> <span>MARS?</span></h2>
+    </header>
+
+    <div class="why-grid">
+      <!--columna izquierda de texto-->
+      <div class="why-copy">
+        <p>
+          At an average distance of <strong>140 million miles</strong>, Mars is one of Earth’s closest
+          habitable neighbors. Mars is about half again as far from the Sun as Earth is, so it still has
+          decent sunlight. It is a little cold, but we can warm it up. Its atmosphere is primarily
+          <strong>CO₂</strong>, with some nitrogen and argon and a few other trace elements, which means that
+          we can grow plants on Mars just by compressing the atmosphere. Gravity on Mars is about
+          <strong>38%</strong> that of Earth, so you would be able to lift heavy things and bound around.
+          Furthermore, the day is remarkably close to that of Earth.
+        </p>
+
+        <a class="btn-cta" href="https://science.nasa.gov/mars/">
+          SEE MORE
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 12h11.1l-4.3-4.3l1.4-1.4L20.9 14l-7.7 7.7l-1.4-1.4l4.3-4.3H5z"/></svg>
+        </a>
+      </div>
+
+      <div class="why-visual">
+        <figure class="photo-wrap">
+          <img src="assets/imgs/mars.png" alt="Mars planet" class="photo-img">
+        </div>
+
+        <ul class="stats on-photo">
+          <li>
+            <span class="num">SIX</span>
+            <span class="label">MONTHS TO GET TO MARS</span>
+          </li>
+          <li>
+            <span class="num">TWO</span>
+            <span class="label">MOONS FLY AROUND MARS</span>
+          </li>
+          <li>
+            <span class="num">24H 39M</span>
+            <span class="label">LENGTH OF A MARTIAN DAY</span>
+          </li>
+          <li>
+            <span class="num">FOURTEEN</span>
+            <span class="label">ARTIFICIAL ORBITAL SATELLITES AT MARS</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--galeria-->
+<section id="gallery" class=" gallery shared-block-bg">
+  <div class="container">
+    <header class="section-head">
+      <h2 class="section-title">Sketches</h2>
+      <p class="section-kicker">Click a card to open the p5.js sketch.</p>
+    </header>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!--card 1
+      <a class="card" href="assets/sketches/2025-galaxia-p5" target="_blank" rel="noopener">
+        <figure class="card-figure">
+          <img src="assets/imgs/sketch1.jpeg" alt="Dust storm over crater — p5.js sketch" loading="lazy" decoding="async">
+          <figcaption class="card-caption">
+            <h3>Dust Storm Crater</h3>
+            <span class="pill">Open sketch</span>
+          </figcaption>
+        </figure>
+      </a>
+
+      <!--card 2
+      <a class="card" href="assets/tps/lucho/index.html" target="_blank" rel="noopener">
+        <figure class="card-figure">
+          <img src="assets/imgs/sketch1.jpeg" alt="Phobos orbit lines — p5.js sketch" loading="lazy" decoding="async">
+          <figcaption class="card-caption">
+            <h3>Phobos Orbits</h3>
+            <span class="pill">Open sketch</span>
+          </figcaption>
+        </figure>
+      </a>
+
+      <!--3
+      <a class="card" href="assets/sketches/2025-marte-p5-para-pagina" target="_blank" rel="noopener">
+        <figure class="card-figure">
+          <img src="assets/imgs/sketch1.jpeg" alt="Perlin dunes on Mars — p5.js sketch" loading="lazy" decoding="async">
+          <figcaption class="card-caption">
+            <h3>Perlin Dunes</h3>
+            <span class="pill">Open sketch</span>
+          </figcaption>
+        </figure>
+      </a>
+
+      <!--4
+   <a class="card" href="assets/sketches/mars-polar-auroras-p5" target="_blank" rel="noopener">
+  <figure class="card-figure">
+    <img
+      src="assets/gifs/polar-auroras-preview.gif"
+      alt="Polar auroras simulated on Mars — animated preview"
+      loading="lazy"
+      decoding="async"
+    >
+    <figcaption class="card-caption">
+      <div class="caption-left">
+        <h3>Polar Auroras</h3>
+        <span class="byline">p5.js sketch</span>
+      </div>
+      <span class="pill">Open sketch</span>
+    </figcaption>
+  </figure>
+</a> -->
+
+    </div> 
+  </div> 
+</section> 
+
+ <section id="compare" class="compare-section">
+  <div class="container compare-inner">
+
+    <!-- “teléfono” Mars -->
+    <div class="device device--mars">
+      <div class="device-header">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="device-body">
+        <p class="device-label">Planet</p>
+        <h3 class="device-title">Mars</h3>
+        <img src="assets/imgs/OSIRIS_Mars_true_color.png" alt="Mars" class="planet-thumb">
+        <ul class="fact-list">
+          <li><span>Mean radius</span><strong>3,389.5 km</strong></li>
+          <li><span>Gravity</span><strong>3.71 m/s² (0.38 g)</strong></li>
+          <li><span>Day length</span><strong>24h 37m</strong></li>
+          <li><span>Moons</span><strong>2 (Phobos, Deimos)</strong></li>
+          <li><span>Water</span><strong>Mostly ice, including subsurface and polar ice, but no liquid water on the surface</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- centro -->
+    <div class="compare-content">
+      <div class="pill-row">
+        <button class="pill-pill is-active">About planets</button>
+      </div>
+      <h2 class="compare-title">Mars vs Earth</h2>
+      <p class="compare-text">
+        Earth is bigger, warmer and wrapped in a thick, oxygen-rich atmosphere. Mars is smaller,
+        colder and has a thin CO₂ atmosphere, but its day length and polar caps make it our most
+        relatable neighbor. Below are the parameters that matter for human missions.
+      </p>
+
+      <div class="compare-grid">
+        <div class="compare-item">
+          <p class="label">Diameter</p>
+          <p class="values"><strong>Mars</strong> 6,779 km · <strong>Earth</strong> 12,742 km</p>
+        </div>
+        <div class="compare-item">
+          <p class="label">Mass</p>
+          <p class="values"><strong>Mars</strong> 6.42 X 10^23 kg <strong>Earth</strong> 5.97 X 10^24 kg</p>
+        </div>
+        <div class="compare-item">
+          <p class="label">Day length</p>
+          <p class="values"><strong>Mars</strong> 24h 37m · <strong>Earth</strong> 23h 56m</p>
+        </div>
+        <div class="compare-item">
+          <p class="label">Year length</p>
+          <p class="values"><strong>Mars</strong> 687 d · <strong>Earth</strong> 365 d</p>
+        </div>
+        <div class="compare-item">
+          <p class="label">Atmosphere</p>
+          <p class="values"><strong>Mars</strong> CO₂ 95% · <strong>Earth</strong> N₂ 78%, O₂ 21%</p>
+        </div>
+        <div class="compare-item">
+          <p class="label">Moons</p>
+          <p class="values"><strong>Mars</strong> 2 · <strong>Earth</strong> 1</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- “teléfono” Earth -->
+    <div class="device device--earth">
+      <div class="device-header">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="device-body">
+        <p class="device-label">Planet</p>
+        <h3 class="device-title">Earth</h3>
+        <img src="/assets/imgs/Earth_Western_Hemisphere_transparent_background.png" alt="Earth" class="planet-thumb">
+        <ul class="fact-list">
+          <li><span>Mean radius</span><strong>6,371 km</strong></li>
+          <li><span>Gravity</span><strong>9.81 m/s² (1 g)</strong></li>
+          <li><span>Day length</span><strong>23h 56m</strong></li>
+          <li><span>Moons</span><strong>1 (Moon)</strong></li>
+          <li><span>Water</span><strong>Abundant liquid water covering about 70% of the surface</strong></li>
+          <li><span>Temperature</span><strong>Warmer on average (\(14^{\circ }C\) or \(59^{\circ }F\)), with less extreme variations</strong></li>
+          <li><span>Water</span><strong>Abundant liquid water covering about 70% of the surface</strong></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="mars-break">
+  <div class="mars-break__content container">
+    <p class="tagline">Visual reference</p>
+    <h2 class="title">Red Planet — main asset</h2>
+    <p class="text">
+      This render is the base visual for several p5.js experiments on this site.
+      It keeps the color palette, the lighting and the dark space background, so every
+      sketch feels part of the same system.
+    </p>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <p class="footer-title">Mars Interactive Lab</p>
+      <p class="footer-text">
+        Explorations in p5.js, data & visual storytelling.
+      </p>
+    </div>
+
+    <div class="footer-contact">
+      <p class="footer-label">Contact</p>
+      <a class="footer-mail" href="mailto:lolamazzaoliver@gmail.com">
+       lolamazzaoliver@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Lola Mazza — Multimedial Technology.</p>
+    <a href="#top" class="footer-top">Back to top ↑</a>
+  </div>
+</footer>
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
