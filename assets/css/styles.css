@@ -432,14 +432,11 @@ body{
 .site-footer{
   background: #d4582f;
   padding: 36px 24px 20px;
-  color: var(--cream);
 }
 
 .footer-inner{
   display:flex;
   justify-content:space-between;
-  gap:28px;
-  align-items:flex-start;
 }
 
 .footer-title{
@@ -451,9 +448,6 @@ body{
 
 .footer-text{
   margin:0;
-  color: var(--muted);
-  max-width: 360px;
-  line-height:1.5;
 }
 
 .footer-contact{
@@ -464,23 +458,18 @@ body{
   font-size:.7rem;
   text-transform:uppercase;
   letter-spacing:.16em;
-  color: rgba(232,225,207,.75);
   margin:0 0 4px 0;
 }
 
 .footer-mail{
   display:inline-flex;
-  align-items:center;
-  gap:8px;
   color: #2b2419;
   background: color-mix(in oklab, var(--cream) 92%, white 8%);
   padding:8px 14px;
   border-radius:999px;
   font-weight:600;
   text-decoration:none;
-  border:1px solid rgba(232,225,207,.65);
   box-shadow:0 8px 22px rgba(0,0,0,.35);
-  transition: transform .15s ease;
 }
 .footer-mail:hover{
   transform: translateY(-2px);
@@ -493,10 +482,8 @@ body{
   border-top:1px solid rgba(231,221,201,.08);
   display:flex;
   justify-content:space-between;
-  gap:16px;
   align-items:center;
   font-size:.7rem;
-  color: rgba(232,225,207,.5);
 }
 
 .footer-top{
@@ -506,70 +493,12 @@ body{
 }
 .footer-top:hover{ text-decoration:underline; }
 
-.mars-break{
-  position: relative;
-  overflow: hidden;
-  padding: min(12vh, 120px) 24px;
-  border-block: 1px solid rgba(231,221,201,.12);
-  min-height: 360px;
-  /* por si alguna clase general (shared-block-bg) pone fondo */
-  background: transparent;
-}
-
-/* foto de fondo */
-.mars-break::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("../imgs/mars-bg-black.jpg") top center / cover no-repeat;
-  z-index: 0;
-}
-
-/* oscurecido para que se lea el texto */
-.mars-break::after{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,.05) 0%, rgba(0,0,0,.85) 95%);
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* contenido por arriba de todo */
-.mars-break__content{
-  position: relative;
-  z-index: 2;
-  max-width: 620px;
-  color: var(--cream);
-}
-
-.mars-break .tagline{
-  text-transform: uppercase;
-  letter-spacing: .18em;
-  font-size: .7rem;
-  color: rgba(232,225,207,.75);
-  margin-bottom: .6rem;
-}
-
-.mars-break .title{
-  font-family: 'Audiowide', system-ui, sans-serif;
-  font-size: clamp(30px, 5vw, 48px);
-  margin: 0 0 14px 0;
-}
-
-.mars-break .text{
-  line-height: 1.6;
-  opacity: .9;
-}
-
 .compare-section{
-  background: #050508;
   padding: min(12vh, 120px) 24px;
 }
 
 .compare-inner{
   max-width: 1150px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 260px minmax(0, 1fr) 260px;
   gap: clamp(20px, 3vw, 48px);
@@ -586,7 +515,6 @@ body{
   display: flex;
   flex-direction: column;
   gap: 14px;
-  box-shadow: 0 14px 45px rgba(0,0,0,.3);
 }
 
 .device-header{
@@ -600,11 +528,7 @@ body{
 }
 
 .device-body{
-  background: rgba(0,0,0,.35);
-  border:1px solid rgba(255,255,255,.03);
-  border-radius: 26px;
   padding:14px 14px 16px;
-  flex:1;
   overflow-y:auto;
 }
 
@@ -650,9 +574,6 @@ body{
 }
 
 /* centro */
-.compare-content{
-  text-align:left;
-}
 .pill-row{
   display:flex;
   gap:10px;
@@ -683,7 +604,6 @@ body{
   color: rgba(232,225,207,.8);
   line-height:1.6;
   margin-bottom: 24px;
-  max-width: 540px;
 }
 
 /* cuadritos de comparación */
@@ -693,9 +613,6 @@ body{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 .compare-item{
-  background: rgba(0,0,0,.25);
-  border:1px solid rgba(232,225,207,.03);
-  border-radius: 16px;
   padding:12px 14px 14px;
 }
 .compare-item .label{
