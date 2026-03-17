@@ -5,28 +5,28 @@ if (document.getElementById("galleryGrid")) {
     //array de sketches
     let sketches = [
         {
-            href: "assets/sketches/mars-polar-auroras-p5",
+            href: "assets/sketches/mars-polar-auroras-p5/index.html",
             imgSrc: "assets/gifs/polargif.gif",
             imgAlt: "Polar Auroras — p5.js sketch",
             title: "Polar Auroras",
             pillText: "Open sketch"
         },
         {
-            href: "assets/sketches/mars-textura",
+            href: "assets/sketches/mars-textura/index.html",
             imgSrc: "assets/gifs/mars-texture.gif",
             imgAlt: "Mars texture — p5.js sketch",
             title: "Mars texture",
             pillText: "Open sketch"
         },
         {
-            href: "assets/sketches/2025-mars-layers",
+            href: "assets/sketches/2025-mars-layers/index.html",
             imgSrc: "assets/imgs/mars-layers.jpeg",
             imgAlt: "Mars layers — p5.js sketch",
             title: "Mars layers",
             pillText: "Open sketch"
         },
         {
-            href: "assets/sketches/clicker",
+            href: "assets/sketches/clicker/index.html",
             imgSrc: "assets/imgs/clicker.jpeg",
             imgAlt: "Mars clicker — p5.js sketch",
             title: "Mars clicker",

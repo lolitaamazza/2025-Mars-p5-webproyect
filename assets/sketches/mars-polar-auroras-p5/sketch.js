@@ -40,7 +40,7 @@ function drawNightSkyGradient() {
     let gBot = 40;
     let bBot = 60;
 
-    let rNow = lerp(rTop, rBot, inter); //lerp significa 
+    let rNow = lerp(rTop, rBot, inter); // interpola linealmente entre rTop y rBot según inter (0 → rTop, 1 → rBot)
     let gNow = lerp(gTop, gBot, inter); 
     let bNow = lerp(bTop, bBot, inter);
 

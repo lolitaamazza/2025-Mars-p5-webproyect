@@ -28,6 +28,7 @@ body{
     radial-gradient(120% 120% at 50% 0%, rgba(255,184,122,.10), transparent 40%),
     linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.35));
   padding: min(12vh, 120px) 24px;
+  /* padding vertical responsivo: usa el menor entre 12vh y 120px, significa que el navegador calcula 12vh (el 12% de la altura de la ventana) y lo compara con 120px; usa el valor más pequeño de los dos; padding horizontal fijo 24px */
 }
 
 .shared-block-bg .container{
@@ -61,7 +62,7 @@ body{
 .hero::after{
   content:"";
   position:absolute;
-  inset:-10vmax;
+  inset:-10vmax; /* desplaza los 4 bordes -10vmax; expande el pseudo-elemento 10vmax fuera del contenedor */
   z-index:1;
   pointer-events:none;
   background:
@@ -84,17 +85,13 @@ body{
   display: flex;
   align-items: center;
   gap: 16px;
-
   opacity: .8;
-  user-select: none;
   pointer-events: none;
-
 }
 
 .top-bar::before{
   content: "✥";
   font-size: 18px;
-  transform: translateY(-1px);
   color: var(--cream);
 }
 
@@ -112,7 +109,7 @@ body{
   background:
     radial-gradient(120% 60% at 50% 40%, color-mix(in oklab, var(--glow) 38%, transparent) 0%,rgba(255,184,122,.22) 18%, rgba(0,0,0,0) 45%),
     radial-gradient(100% 100% at 50% 60%,rgba(0,0,0,0) 40%,rgba(0,0,0,.45) 95%);
-  mix-blend-mode:screen;
+  mix-blend-mode:screen; /*aclara e intensifica el glow sobre el fondo. las partes claras se suman y las oscuras se vuelven más transparentes*/
 }
 
 /*sections base*/
@@ -173,7 +170,7 @@ body{
 .facts-grid{
   display:grid;
   gap:16px;
-  grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) );
+  grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) ); /* auto-fit: tantas columnas como entren; minmax: minimo 220px, maximo 1fr (fracción del espacio disponible). auto-fit hace que las partes vacías se colapsen cuando no hay suficientes items, de modo que los elementos se reordenen en menos columnas al reducir el ancho de la ventana.*/
 }
 .fact-card{
   background: rgba(20,16,14,.55);
@@ -225,7 +222,8 @@ body{
   font-weight:600;
   letter-spacing:.06em;
   font-size: clamp(26px, 5vw, 44px);
-  display:flex; gap:.35em;
+  display:flex; 
+  gap:.35em;
 }
 .why-title span:first-child{ 
   opacity:.85; 
